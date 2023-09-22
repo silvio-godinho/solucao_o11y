@@ -1,0 +1,12 @@
+groups:
+ - name: app_errors_total
+   rules:
+   - alert: app_errors_total
+     expr: app_errors_total > 2
+     for: 10s
+     
+ - name: Count greater than 5
+   rules:
+   - alert: app_function_duration_seconds_count
+     expr: app_function_duration_seconds_count > 4
+     for: 10s

@@ -1,0 +1,9 @@
+global:
+  resolve_timeout: 3m
+route:
+  receiver: webhook_receiver
+receivers:
+    - name: webhook_receiver
+      webhook_configs:
+        - url: 'https://webhook.site/5b37e6ba-412a-41c9-a33d-db562bd17287'
+          send_resolved: false
